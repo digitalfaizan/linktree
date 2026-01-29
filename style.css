@@ -1,81 +1,72 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9f7f4;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #1c1c1c;
+body{
+color:#344E41;
+background-color:#dad7cd;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+box-sizing:border-box;
 }
-
-.container {
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 30px 15px;
-  background-color: #fff;
-  border: 1px solid #eee;
-  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+.wrapper{
+width:100%;
+max-width:900px;
+margin:auto;
+text-align:center;
+box-sizing:border-box;
 }
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  margin-bottom: 5px;
+.left, .right{
+float:left;
+width:20%;
 }
-
-h2 {
-  color: #d67d3e;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 20px;
+.center{
+float:left;
+width:60%;
+background-color:#588157;
 }
-
-.profile {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  object-fit: cover;
+@media screen and (max-width:800px){
+.left, .center, .right{
+width:100%;
+ } 
 }
-
-.links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 25px;
+footer{
+font-size:10px;
 }
-
-.btn {
-  display: block;
-  padding: 14px;
-  text-decoration: none;
-  color: #000;
-  border: 1px solid #ddd;
-  background-color: #f7f5f2;
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  transition: all 0.3s ease;
+table, tr, td{
+border:1px solid black;
 }
-
-.btn:hover {
-  background-color: #e0d8cf;
+table{
+margin:auto;
 }
-
-.highlight {
-  background-color: #d7b7a3;
-  color: #fff;
+ol, ul{
+margin:0;
+padding:0;
+list-style-position:inside;
 }
-
-.footer-text {
-  font-size: 10px;
-  color: #555;
-  margin-top: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  line-height: 1.4;
+li{
+margin:5px 0;
 }
-
-/* Responsive */
-@media (max-width: 500px) {
-  .links {
-    grid-template-columns: 1fr 1fr;
-  }
+nav{
+display:flex;
+justify-content:center;
+gap:10px;
+}
+nav a{
+color:#344E41;
+text-decoration:none;
+padding:8px 16px;
+transition:0.3s;
+border-radius:5px;
+border:1px solid #344E41;
+}
+nav a:hover{
+background-color:#344E41;
+border-radius:5px;
+}
+button{
+padding:8px 16px;
+border-radius:5px;
+font-size:20px;
+}
+form{
+text-align:left;
 }
